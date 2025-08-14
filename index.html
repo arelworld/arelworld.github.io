@@ -1,38 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arel M. Abad | Portfolio</title>
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        background: #f4f8fc;
+        color: #333;
+    }
+
+    /* Navigation */
+    nav {
+        background: #0d47a1;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav h1 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #0d47a1, #1976d2);
+        color: white;
+    }
+    .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .hero p {
+        max-width: 600px;
+        margin: auto;
+        font-size: 1.1rem;
+    }
+
+    /* Skills Section */
+    .skills {
+        padding: 40px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+    .skills h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        color: #0d47a1;
+    }
+    .skill-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .badge {
+        background: #1976d2;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Experience Cards */
+    .experience {
+        padding: 40px 20px;
+        background: #ffffff;
+    }
+    .experience h3 {
+        text-align: center;
+        color: #0d47a1;
+        margin-bottom: 30px;
+    }
+    .exp-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+    .card {
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .card h4 {
+        color: #1976d2;
+        margin-bottom: 10px;
+    }
+    .card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    /* Education */
+    .education {
+        padding: 40px 20px;
+    }
+    .education h3 {
+        text-align: center;
+        color: #0d47a1;
+        margin-bottom: 20px;
+    }
+    .edu-list {
+        max-width: 800px;
+        margin: auto;
+        list-style: none;
+        padding: 0;
+    }
+    .edu-list li {
+        background: white;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .edu-list strong {
+        color: #1976d2;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #0d47a1;
+        color: white;
+        font-size: 0.9rem;
+    }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Web Developer | Designer | Creator</p>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a web developer passionate about building responsive websites and creative digital experiences.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
+<!-- Navigation -->
+<nav>
+    <h1>Arel M. Abad</h1>
     <ul>
-      <li><strong>Portfolio Website:</strong> You're looking at it!</li>
-      <li><strong>Project Two:</strong> Description of another project.</li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
     </ul>
-  </section>
+</nav>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
-  </section>
+<!-- Hero Section -->
+<section class="hero">
+    <h2>Hello, I'm Arel 👋</h2>
+    <p>Eager to acquire new skills and knowledge in IT, aiming to contribute effectively and bring a positive impact to a dynamic work environment.</p>
+</section>
 
-  <footer>
-    <p>© 2025 Your Name</p>
-  </footer>
+<!-- Skills Section -->
+<section class="skills" id="skills">
+    <h3>Technical Skills</h3>
+    <div class="skill-badges">
+        <div class="badge">HTML</div>
+        <div class="badge">CSS</div>
+        <div class="badge">JavaScript</div>
+        <div class="badge">PHP</div>
+        <div class="badge">Java</div>
+        <div class="badge">MySQL</div>
+        <div class="badge">Canva</div>
+        <div class="badge">WordPress</div>
+        <div class="badge">Git</div>
+        <div class="badge">GitHub</div>
+        <div class="badge">Linux (CentOS)</div>
+        <div class="badge">PuTTY</div>
+        <div class="badge">AnyDesk</div>
+        <div class="badge">Microsoft Office</div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section class="experience" id="experience">
+    <h3>Work Experience</h3>
+    <div class="exp-cards">
+        <div class="card">
+            <h4>Technopal Software (2024 - 2025)</h4>
+            <p>Managed SQL databases, installed and configured Linux systems, set up CentOS, performed remote troubleshooting, and developed web app features using Java-based frameworks with Git/GitHub collaboration.</p>
+        </div>
+        <div class="card">
+            <h4>Internship - Trident Technology (Feb - Jun 2024)</h4>
+            <p>Created UI prototypes in Canva, implemented CRUD in PHP, and explored Git/GitHub for code management.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section class="education" id="education">
+    <h3>Education</h3>
+    <ul class="edu-list">
+        <li><strong>Carlos Hilado Memorial State University</strong> - BS in Information Technology (2020-2024)</li>
+        <li><strong>La Consolacion College Bacolod</strong> - Senior High School (2018-2019)</li>
+        <li><strong>Paglaum Village National High School</strong> - Junior High School (2014-2017)</li>
+        <li><strong>Paglaum Village Elementary School</strong> - Elementary (2008-2013)</li>
+    </ul>
+</section>
+
+<!-- Footer -->
+<footer>
+    &copy; 2025 Arel M. Abad | Built with ❤️ using HTML & CSS
+</footer>
+
 </body>
 </html>
